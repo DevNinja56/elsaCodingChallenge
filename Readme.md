@@ -1,6 +1,4 @@
-Certainly! Below is the formatted README content:
 
----
 
 # Real-Time Quiz System
 

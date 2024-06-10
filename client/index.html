@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Real-Time Quiz</h1>
+        <div id="join-quiz">
+            <input type="text" id="quiz-id" placeholder="Enter Quiz ID" value="1"> <!-- Default to 1 -->
+            <input type="text" id="user-id" placeholder="Enter User ID">
+            <button onclick="joinQuiz()">Join Quiz</button>
+        </div>
+        <div id="quiz" style="display:none;">
+            <div id="question-container">
+                <p id="question"></p>
+                <input type="text" id="answer" placeholder="Enter your answer">
+                <button onclick="submitAnswer()">Submit Answer</button>
+            </div>
+            <div id="leaderboard">
+                <h2>Leaderboard</h2>
+                <ul id="leaderboard-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

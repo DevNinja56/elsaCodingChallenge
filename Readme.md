@@ -11,3 +11,5 @@ This is a real-time quiz application built with Node.js, Express, Socket.IO, Pos
 - Redis
 
 # elsaCodingChallenge
+
+Setup a postgres database with tables Users, Quizzes and Scores
